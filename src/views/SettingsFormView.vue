@@ -76,7 +76,7 @@
       <!-- Start time select -->
       <select
         v-model="day.startTime"
-        class="block cursor-pointer w-56 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        class="block cursor-pointer w-56 p-2 text-sm text-gray-700 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
       >
         <option class="text-sm text-gray-700" v-for="time in times" :key="time" :value="time">
           {{ time }}
@@ -88,7 +88,7 @@
       <!-- End time select -->
       <select
         v-model="day.endTime"
-        class="block cursor-pointer w-56 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        class="block cursor-pointer w-56 text-sm text-gray-700 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
       >
         <option class="text-sm text-gray-700" v-for="time in times" :key="time" :value="time">
           {{ time }}
