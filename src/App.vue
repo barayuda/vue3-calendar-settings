@@ -8,11 +8,10 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="Hi there, Bara here!" />
+      <HelloWorld msg="Hi LittleLives" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/settings">Settings</RouterLink>
         <RouterLink to="/scheduler">Scheduler</RouterLink>
       </nav>
@@ -24,20 +23,15 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <style scoped>
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  @apply leading-4 max-h-screen;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  @apply block mx-auto mb-8;
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+  @apply w-full text-base text-center mt-8;
 }
 
 nav a.router-link-exact-active {
@@ -60,9 +54,7 @@ nav a:first-of-type {
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    @apply flex items-center col-start-1 col-end-4;
   }
 
   .logo {

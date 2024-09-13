@@ -2,9 +2,6 @@
 import WelcomeItem from './WelcomeItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
@@ -12,11 +9,9 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Documentation</template>
-
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
+    <template #heading>Barayuda Gautama</template>
+    Email:
+    <a href="mailto:gede@barayuda.web.id">gede@barayuda.web.id</a>
   </WelcomeItem>
 
   <WelcomeItem>
@@ -25,11 +20,12 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Tooling</template>
 
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>.
-
+    This project is using
+    <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
+    <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a> +
+    <a href="https://tailwindcss.com" target="_blank" rel="noopener">Tailwind</a> +
+    <a href="https://fullcalendar.io" target="_blank" rel="noopener">Full Calendar</a>
     <br />
-
     Other instructions are available in <code>README.md</code>.
   </WelcomeItem>
 </template>

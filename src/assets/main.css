@@ -1,7 +1,7 @@
 @import './base.css';
 
 #app {
-  @apply max-w-screen-2xl mx-auto p-8 font-normal;
+  @apply max-w-screen-2xl mx-auto font-normal;
 }
 
 a,
@@ -20,13 +20,14 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
+    @apply flex items-center justify-center place-content-center;
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 2rem;
+    @apply grid grid-cols-12 gap-4;
+  }
+
+  main {
+    @apply ml-10 col-span-12 md:col-span-8;
   }
 }

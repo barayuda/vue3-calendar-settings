@@ -1,11 +1,16 @@
 <template>
-  <form @submit.prevent="saveSettings" class="space-y-6 p-6 bg-white shadow-md rounded-lg">
+  <form
+    @submit.prevent="saveSettings"
+    class="space-y-6 p-6 bg-white shadow-md rounded-lg ml-10 col-span-12 md:col-span-8"
+  >
     <div class="space-y-2">
-      <label for="duration" class="block text-sm font-medium text-gray-700">Visit Duration</label>
+      <label for="duration" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Visit Duration</label
+      >
       <select
         v-model="settings.duration"
         id="duration"
-        class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        class="bg-gray-50 cursor-pointer border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       >
         <option value="" disabled>Select</option>
         <option value="15">15 min</option>
@@ -25,7 +30,7 @@
         id="slots"
         v-model="settings.slots"
         min="1"
-        class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        class="block cursor-pointer w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
       />
     </div>
 
@@ -34,9 +39,11 @@
         id="videoCall"
         type="checkbox"
         v-model="settings.allowVideoCall"
-        class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+        class="h-4 w-4 cursor-pointer text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
       />
-      <label for="videoCall" class="ml-2 block text-sm text-gray-900">Allow video tour call</label>
+      <label for="videoCall" class="ml-2 cursor-pointer block text-sm text-gray-900"
+        >Allow video tour call</label
+      >
     </div>
 
     <div>
@@ -82,6 +89,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
-/* Add some Tailwind-based styles */
-</style>
+<style scoped></style>

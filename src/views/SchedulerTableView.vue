@@ -2,13 +2,15 @@
   <div class="scheduler">
     <div class="scheduler-sidebar">
       <div class="scheduler-sidebar-section">
-        <label>
+        <label for="weekends" class="cursor-pointer select-none">
           <input
+            id="weekends"
             type="checkbox"
             :checked="calendarOptions.weekends"
             @change="handleWeekendsToggle"
+            class="h-4 w-4 cursor-pointer text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
           />
-          toggle weekends
+          &nbsp;View weekends
         </label>
       </div>
       <div class="scheduler-sidebar-section">
@@ -22,7 +24,7 @@
       </div>
     </div>
     <div class="scheduler-main">
-      <FullCalendar class="scheduler-calendar" :options="calendarOptions">
+      <FullCalendar class="scheduler-calendar cursor-pointer" :options="calendarOptions">
         <template v-slot:eventContent="arg">
           <b>{{ arg.timeText }}</b>
           <i>{{ arg.event.title }}</i>
@@ -32,7 +34,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue'
 import FullCalendar from '@fullcalendar/vue3'
 import dayGridPlugin from '@fullcalendar/daygrid'
@@ -130,14 +132,7 @@ b {
 }
 
 .scheduler {
-  display: flex;
-  min-height: 100%;
-  font-family:
-    Arial,
-    Helvetica Neue,
-    Helvetica,
-    sans-serif;
-  font-size: 14px;
+  @apply flex ml-10 col-span-12 md:col-span-8;
 }
 
 .scheduler-sidebar {

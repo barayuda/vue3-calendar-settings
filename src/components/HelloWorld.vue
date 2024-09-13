@@ -7,14 +7,7 @@ defineProps<{
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
-    <h3>
-      This projects is generated using Vue3 create app and for test to LittleLives. This project is
-      using
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a> +
-      <a href="https://tailwindcss.com" target="_blank" rel="noopener">Tailwind</a> +
-      <a href="https://antoniandre.github.io/vue-cal/" target="_blank" rel="noopener">Vue Cal</a>
-    </h3>
+    <h3>This projects is generated using Vue3 create app and for test to LittleLives.</h3>
   </div>
 </template>
 

@@ -14,24 +14,36 @@
 
 <style scoped>
 .item {
-  @apply mt-8 flex relative;
+  margin-top: 2rem;
+  display: flex;
+  position: relative;
 }
 
 .details {
-  @apply flex-1 ml-4;
+  flex: 1;
+  margin-left: 1rem;
 }
 
 i {
-  @apply flex items-center justify-center w-8 h-8 text-[var(--color-text)];
+  display: flex;
+  place-items: center;
+  place-content: center;
+  width: 32px;
+  height: 32px;
+
+  color: var(--color-text);
 }
 
 h3 {
-  @apply font-bold text-lg mb-2 text-[var(--color-heading)];
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--color-heading);
 }
 
 @media (min-width: 1024px) {
   .item {
-    @apply mt-0;
+    margin-top: 0;
     padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
   }
 
